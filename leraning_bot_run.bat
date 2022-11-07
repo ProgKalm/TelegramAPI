@@ -4,8 +4,8 @@ call %~dp0venv\Scripts\activate.bat
 
 cd %~dp0Learning\
 
-set TOKEN=5682682178:AAELtBNb6YfuiX5PE763En0HvXJVgKOTQWQ
+set TOKEN=5683182363:AAGfN2-YHTiS0kQ20mboYCe0vH7dhnkMUKU
 
-python main.py
+python bot.py
 
 pause
