@@ -1,6 +1,5 @@
+*.bat
+
 venv
 .idea
 __pycache__
-
-
-learn.bat
