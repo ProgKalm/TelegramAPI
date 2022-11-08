@@ -1,0 +1,28 @@
+{
+  "General": {
+    "/start": "Send for you simple welcome text.",
+    "/help": "Send help information about all commands for your user-type",
+    "/usertype": "Send you your user-type"
+  },
+  "Guest": {
+    "/registrate": "Set user status as User.",
+    "/reg [login] [password]": "Set user status as AdminUser and this status must confirmed SuperAdmin.",
+    "/out": "Set user status as Guest.",
+    "href": "General"
+  },
+  "User": {
+    "/find [name]": "Find book by name from database",
+    "/id [id]": "Find book by id from database",
+    "/author [author]": "Find all books by author",
+    "href": "Guest"
+  },
+  "Admin": {
+    "/add [file]": "Save file if its mimetype is one of FB2 PDF EPUB, MOBI, TXT, LaTeX",
+    "/del [id]": "Delete book by id from database",
+    "href": "User"
+  },
+  "SuperAdmin": {
+    "/confirmation [user_id]": "Confirmation of user status as Admin by id as user_id",
+    "href": "Admin"
+  }
+}

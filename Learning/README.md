@@ -7,18 +7,21 @@ This project realize TelegramBot by name [Bookworm](https://t.me/book_getter_bot
 This bot save book(or other files) on data base and for all books(or files) all users have access
 
 ***
+***
 
-## UsersTypes
+# UsersTypes
 
 ***
-Guest can:
+
+### Guest can do:
 
 1. */registrate* - set user status as `User`
 2. */reg [login] [password]* - set user status as `AdminUser` and this status must is confirmed SuperAdmin
-3. */login [login] [password]* -  if `login` and `password` for this login is valid then user status set as `AdminUser`
-4. */out* set user status as `Guest`
+3. */out* - set user status as `Guest`
+
 ***
-User can:
+
+### User can do:
 
 1. */find [name]* - find book from database by it name(substring)
 2. */id [id]* - find book from id
@@ -27,10 +30,13 @@ User can:
 
 ***
 
-AdminUser can:
+### AdminUser can do:
 1. */add [file]* - save file if its _**mimetype**_ is one of `FB2` `PDF` `EPUB`, `MOBI`, `TXT`, `LaTeX`
 2. */del [id]* - del book by id
 3. and all what can `User`
 
-SuperAdmin can:
+***
+
+### SuperAdmin(must be 1) can:
 1. */confirmation [id]* - confirmation of user rights with id
+2. and all what can do `AdminUser`

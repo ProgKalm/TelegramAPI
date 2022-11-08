@@ -1,6 +1,7 @@
 import datetime
 from aiogram.utils import executor
 from create_bot import dp
+from handlers import *
 
 
 async def on_startup(_):
@@ -10,5 +11,11 @@ async def on_startup(_):
 async def on_shutdown(_):
     print(f"Bot finished at {datetime.datetime.now()}")
 
+
+superadmin.register_handlers(dp)
+admin.register_handlers(dp)
+user.register_handlers(dp)
+guest.register_handlers(dp)
+general.register_handlers(dp)
 
 executor.start_polling(dp, skip_updates=True, on_startup=on_startup, on_shutdown=on_shutdown)
