@@ -1,5 +1,5 @@
 *.bat
 
-venv
+.venv
 .idea
 __pycache__
