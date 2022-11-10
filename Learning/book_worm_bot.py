@@ -1,6 +1,6 @@
 import datetime
 from aiogram.utils import executor
-from create_bot import dp
+from create_bot import dp, database
 from handlers import *
 
 
@@ -9,6 +9,7 @@ async def on_startup(_):
 
 
 async def on_shutdown(_):
+    database.close()
     print(f"Bot finished at {datetime.datetime.now()}")
 
 
