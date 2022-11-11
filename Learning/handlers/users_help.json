@@ -6,11 +6,11 @@
   },
   "Guest": {
     "/registrate": "Set user status as User if user status is Guest or None",
-    "/reg [login] [password]": "Set user status as AdminUser and this status must confirmed SuperAdmin.",
     "/out": "Set user status as Guest.",
     "href": "General"
   },
   "User": {
+    "/reg": "Set user status as AdminUser and this status must confirmed SuperAdmin.",
     "/find [name]": "Find book by name from database",
     "/id [id]": "Find book by id from database",
     "/author [author]": "Find all books by author",

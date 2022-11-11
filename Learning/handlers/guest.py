@@ -1,19 +1,5 @@
 from aiogram import types, Dispatcher
-from create_bot import database, User, bot
-
-
-def get_user_by_msg(message: types.Message):
-    id = message.from_user.id
-    fn = message.from_user.first_name if message.from_user.first_name is not None else ""
-    ln = message.from_user.last_name if message.from_user.last_name is not None else ""
-    return User(id, str(fn + " " + ln).strip(), "Guest")
-
-
-def get_user_status(user_id):
-    user: User = database.get_user(user_id)
-    if user is None:
-        return None
-    return user.status
+from create_bot import database, User, bot, get_user_status, get_user_by_msg
 
 
 async def registrate_simple_user(message: types.Message):
