@@ -10,6 +10,8 @@ async def on_startup(_):
 
 async def on_shutdown(_):
     database.close()
+    with open("d.txt", "w") as file:
+        file.write("File closed")
     print(f"Bot finished at {datetime.datetime.now()}")
 
 

@@ -5,7 +5,7 @@
     "/usertype": "Send you your user-type"
   },
   "Guest": {
-    "/registrate": "Set user status as User.",
+    "/registrate": "Set user status as User if user status is Guest or None",
     "/reg [login] [password]": "Set user status as AdminUser and this status must confirmed SuperAdmin.",
     "/out": "Set user status as Guest.",
     "href": "General"
